@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #faf6ef;
+  --bg-warm: #fdfaf3;
+  --card: #ffffff;
+  --fg: #1a1d2e;
+  --muted: #6b7280;
+  --primary: #1e3a2b;
+  --primary-light: #2d5a3d;
+  --primary-soft: #e8efe9;
+  --accent: #e85d04;
+  --accent-light: #f48c06;
+  --secondary: #d4a373;
+  --border: #e7e2d8;
+  --success: #2d6a4f;
+  --warning: #f59e0b;
+  --danger: #d62828;
+  --info: #1d4e89;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c9c0b0; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(232, 93, 4, 0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(30, 58, 43, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 100%, rgba(212, 163, 115, 0.12) 0%, transparent 60%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+.status-pending { background: #fef3c7; color: #92400e; }
+.status-paid { background: #d1fae5; color: #065f46; }
+.status-shipped { background: #dbeafe; color: #1e40af; }
+.status-completed { background: #e0e7ff; color: #3730a3; }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
