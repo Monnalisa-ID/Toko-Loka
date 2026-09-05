@@ -9,7 +9,7 @@
 # 🌿 Toko Loka — Belanja Lokal Terpercaya
 
 **Toko Loka** adalah platform e-commerce modern berbasis React yang dirancang khusus untuk mendukung **UMKM Indonesia**. Aplikasi ini menyediakan pengalaman belanja online lengkap — mulai dari katalog produk, keranjang belanja, checkout dengan pilihan ekspedisi, hingga pembayaran terintegrasi melalui **iPaymu Payment Gateway** (QRIS & Transfer Bank).
-
+<img src="https://github.com/Monnalisa-ID/Toko-Loka/blob/main/Landing%20Page.png"/>
 > 💡 Aplikasi ini berjalan sepenuhnya di sisi client (SPA) dengan state management menggunakan Zustand dan data yang di-persist di `localStorage`.
 
 ---
